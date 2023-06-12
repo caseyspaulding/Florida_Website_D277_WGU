@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 30px;
+}
+
+#flag{
+  float: right;
+}
+
+
+header{
+  margin-top: 100px;
+}
+
+
+@media (max-width: 868px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns - Casey Spaulding */
+  grid-gap: 20px; /* Gap between columns - Casey Spaulding*/
+  justify-content: center; /* Centers the grid horizontally */
+}
+
+.column {
+  padding: 20px;
+}
+
+footer{
+  clear: both;
+  padding: 10px;
+  background-color: #22A699;
+  text-align: center;
+  flex-shrink: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav {
+  background-color: #22A699;
+  padding: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+}
+
+
+.logo img {
+  height: 50px;
+  float: left;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  color: #F2BE22;
+}
+
