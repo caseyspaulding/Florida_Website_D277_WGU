@@ -25,9 +25,9 @@ header{
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal-width columns - Casey Spaulding */
+  grid-template-columns: 2fr 1fr; 
   grid-gap: 20px; /* Gap between columns - Casey Spaulding*/
-  justify-content: center; /* Centers the grid horizontally */
+  justify-content: center; 
 }
 
 .column {
@@ -78,5 +78,19 @@ nav {
 
 .nav-links li a:hover {
   color: #F2BE22;
+}
+
+.pull-quote {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-left: 4px solid #333;
+  margin: 20px 0;
+}
+
+.pull-quote blockquote {
+  font-style: italic;
+  color: #666;
+  margin: 0;
+  padding: 0;
 }
 
