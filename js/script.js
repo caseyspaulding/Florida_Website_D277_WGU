@@ -1,13 +1,9 @@
-const emailInput = document.getElementById('email');
-const confirmEmailInput = document.getElementById('confirm-email');
-
-confirmEmailInput.addEventListener('input', function () {
-  const email = emailInput.value;
-  const confirmEmail = confirmEmailInput.value;
+function verifyEmail() {
+  var email = document.getElementById('email').value;
+  var confirmEmail = document.getElementById('confirm-email').value;
 
   if (email !== confirmEmail) {
-    confirmEmailInput.setCustomValidity('Email addresses must match.');
-  } else {
-    confirmEmailInput.setCustomValidity('');
+    alert('Email addresses do not match!');
+    return false;
   }
-});
+}
